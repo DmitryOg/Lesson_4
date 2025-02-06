@@ -19,7 +19,7 @@ blue_image = Image.blend(blue_left, blue_center, 0.3)
 coordinate = (25, 0, 671, 522)
 green_image = green.crop(coordinate)
 
-new_image = Image.merge("RGB", (red_image, blue_image, green_image))
+new_image = Image.merge("RGB", (red_image, green_image, blue_image))
 new_image.save("new_monro", format='JPEG')
 
 profile_picture = Image.open('new_monro')
